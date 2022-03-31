@@ -1,0 +1,29 @@
+.LiveAnywhereCard{
+    width: 100%;
+    
+
+}
+.LiveAnywhereCard img{
+    border-radius: 10px;
+    width: 100%;
+}
+.LiveAnywhere{
+    padding: 2em 0;
+}
+.LiveAnywhereCard h6{
+    margin-bottom: 0;
+    padding-top: 0.5em;
+    color: rgb(34, 34, 34);
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 1.125em;
+}
+.LiveAnywhere> h1{
+    color: rgb(34, 34, 34);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.LiveAnywhere>div::-webkit-scrollbar {
+    display: none;
+  }

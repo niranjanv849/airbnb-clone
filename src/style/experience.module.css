@@ -1,0 +1,51 @@
+.Experience{
+    background-color: black;
+    padding: 2em 5.6em;
+}
+.Experience> h1{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.Experience> p{
+    color: #ffffff;
+    font-size: 0.875em;
+    font-weight: 600;
+    padding: 0.5em 0 2em 0;
+    margin-bottom: 0;
+}
+.ExperienceCard h6{
+    color: #ffffff;
+    font-size: 1.125em;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    line-height: 1;
+}
+.ExperienceCard p{
+    color: #ffffff;
+    font-size: 0.875em;
+    font-weight: 400;
+    margin-top: 0.25em;
+    margin-bottom: 0;
+}
+.ExperienceCard{
+    width: 100%;
+}
+.ExperienceCard{
+    width: 100%;
+}
+.ExperienceCard img{
+    border-radius: 10px;
+    width: 100%;
+}
+.Experience>div::-webkit-scrollbar {
+    display: none;
+  }
+@media screen and (max-width: 860px){
+    .Experience{
+        padding: 2em 1.5em;
+    }
+    
+  }

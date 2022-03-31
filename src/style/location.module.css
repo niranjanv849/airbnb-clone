@@ -1,0 +1,33 @@
+.LocationCard{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.LocationCard img{
+    width: 64px;
+    height: 64px;
+    border-radius: 10px;
+    margin-right: 1em;
+}
+.LocationCard h6{
+    color: rgb(34, 34, 34);
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+.LocationCard p{
+    color: rgb(34, 34, 34);
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+.Location{
+    padding: 2em 0;
+    overflow: auto;
+}
+.Location::-webkit-scrollbar {
+    display: none;
+  }

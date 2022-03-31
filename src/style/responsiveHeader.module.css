@@ -1,0 +1,45 @@
+.ResponsiveHeader{
+    display: none;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 1.5em;
+}
+.searchContainer{
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 40px;
+    padding: 0.5em;
+}
+.searchContainer i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 16px;
+}
+.searchContainer input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding-left: 2em;
+    font-size: 1.2em;
+    outline: none;
+}
+.ResponsiveHeader button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px ;
+    outline: none ;
+    color: rgb(34, 34, 34) ;
+    font-weight: 600;
+    margin-left: 1em;
+}
+@media screen and (max-width: 860px) {
+    .ResponsiveHeader{
+        display: block;
+    }
+}

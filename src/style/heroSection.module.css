@@ -1,0 +1,41 @@
+.HeroSection{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height:90vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 5em;
+}
+.HeroSection h1{
+    font-size: 6.75em;
+    font-weight: 800;
+    color: #ffffff;
+    width: 100%;
+    max-width: 300px;
+    line-height: 0.8;
+    margin-bottom: 0.3em;
+}
+.HeroSection button{
+    background-color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    padding: 0.5em 1.5em;
+}
+@media screen and (max-width: 1150px) {
+    .HeroSection{
+        justify-content: flex-end;
+        padding-bottom: 1em;
+    }
+  }
+  @media screen and (max-width: 860px){
+    .HeroSection{
+        padding: 0 1.5em;
+        padding-bottom: 1em;
+    }
+    
+  }

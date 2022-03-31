@@ -1,0 +1,192 @@
+.HeaderForm{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    position: relative;
+    padding-right: 1em;
+    margin: auto;
+}
+.HeaderForm button{
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    cursor: pointer;
+    
+    padding: 0.9em 4.9em 0.9em 2.3em;
+
+    position: relative;
+}
+.HeaderForm button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 1px;
+    background-color: #EBEBEB;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.HeaderForm button:hover::before{
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+}
+.HeaderForm button:hover:nth-child(4){
+    position: static;
+}
+.HeaderForm button:nth-child(4):hover::before{
+position: absolute;
+left: 615px;
+width: 28%;
+
+}
+.HeaderForm button:hover + button::before{
+    background-color: transparent;
+}
+.HeaderForm button:first-child::before{
+    background-color: transparent;
+}
+
+.HeaderForm button:nth-child(5)::before{
+    background-color: transparent;
+}
+.HeaderForm button:hover{
+    background-color:#EBEBEB;
+    border-radius: 50px;
+}
+.HeaderForm button h6{
+    font-size: 0.9em;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 5;
+}
+.HeaderForm button p{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 0;
+    columns: #000000;;
+    font-size: 0.875em;
+    position: relative;
+    z-index: 5;
+
+}
+.HeaderForm button:last-child{
+    border: none;
+    padding: 0.5em 0.8em;
+    background-color: #FF385C;
+    border-radius: 40px;
+    color: #fff;
+}
+.headerAnimatedForm{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    padding: 0.5em 0.5em 0.5em 1em;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 0;
+
+}
+.headerAnimatedForm span{
+   border: none;
+    width: 35px;
+    height: 35px;
+    background-color: #FF385C;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875em;
+}
+.headerAnimatedForm:hover{
+box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5em;
+}
+.links p{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0 1em;
+    position: relative;
+    cursor: pointer;
+}
+.links p:hover{
+    opacity: 0.8 ;
+}
+.links p.active:hover{
+    opacity: 1;
+}
+.links P.active::after,
+.links P.active:hover:after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    border: 20px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.links P:hover:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    border: 20px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.links p.color{
+   color: #222222;
+}
+.links P.active.color::after,
+.links P.active.color:hover:after{
+    background-color: #222222;
+}
+.links P.color:hover:after{
+    background-color: #222222;
+}
+.form{
+    transform: translateX(-50%);
+          transition: 100ms all ease-in-out;
+          position: absolute;
+          left: 50%;
+          top: 36px;
+}
+.form.animated{
+    transform: translateX(-50%) translateY(-60px);
+    top: 16px;
+}
+@media screen and (max-width: 1150px) {
+    .form{
+        top: 90px;
+    }
+    .form.animated{
+        top: 16px;
+        left: 39px;
+        transform: translateY(-60px);
+    }
+    .headerAnimatedForm{
+        margin-left: 0;
+        
+    }
+    .HeaderForm{
+        margin: 0;
+    }
+  }

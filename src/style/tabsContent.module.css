@@ -1,0 +1,21 @@
+.TabsContent h4{
+    color: rgb(34, 34, 34);
+    font-size: 0.875em;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+.TabsContent p{
+    color: rgb(113, 113, 113);
+    font-size: 0.875em;
+    line-height: 18px;
+    margin-bottom: 0;
+}
+.TabsSection{
+    padding: 2em 0;
+}
+.TabsSection> h1{
+    color: rgb(34, 34, 34);
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}

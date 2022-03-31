@@ -1,0 +1,82 @@
+.Header{
+    display: flex;
+    align-items: baseline;
+    margin: 0 5em;
+    z-index: 5;
+    height: 80px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1.3em 0px;
+    top: 0;
+}
+
+.logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.logo i{
+    font-size: 1.2em;
+    margin-right: 0.3em;
+    font-weight: 500;
+}
+.actionBtn{
+    display: flex;
+    align-items: center;
+}
+.actionBtn>a{
+    color: #fff;
+    margin: 0 1em;
+    display: inline-block;
+    padding: 0.5em;
+    border-radius: 20px;
+}
+.actionBtn>a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.actionBtn>a:first-child{
+    margin-left: 0;
+}
+.actionBtn .dropdownBtn{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+.actionBtn .dropdownBtn i{
+    color: #717171;
+    padding: 0 0.8em;
+}
+.actionBtn .dropdownBtn>i:last-child{
+    font-size: 1.7em;
+    padding: 0.2em 0;
+}
+.animatedBg{
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 94px;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 0px 0px 20px darkgrey;
+    transform: translateY(-104px);
+    transition: 300ms all ease-in-out;
+}
+@media screen and (max-width: 860px) {
+    .Header{
+        display: none;
+    }
+    .animatedBg{
+        height: 70px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .Header{
+        margin: 0 2em;
+    }
+}
